@@ -1,0 +1,134 @@
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.dashboard {
+  display: flex;
+}
+
+.profileDiv {
+  margin: 1rem;
+}
+
+.dashboardDiv {
+  margin: 2rem;
+}
+
+.para {
+  text-transform: uppercase;
+  color: #9f8096;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.colorsDiv {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-row-gap: 0.75rem;
+  row-gap: 0.75rem;
+  grid-column-gap: 0.5rem;
+  column-gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.circle,
+.primaryCircle {
+  box-sizing: border-box;
+  border: 0 solid #e2e8f0;
+  display: block;
+  width: 1.3rem;
+  height: 1.3rem;
+  cursor: pointer;
+  border-width: 1px;
+  border-radius: 50%;
+}
+
+.primaryCircle {
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-right: 0.5rem;
+}
+
+.circle:hover {
+  opacity: 0.5;
+}
+
+.input {
+  width: 100%;
+  background-color: #edf2f7;
+  padding: 0.75rem 1rem;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  border: none;
+  margin-top: 0.25rem;
+}
+
+.input:focus {
+  background-color: white;
+  border: 0.1px solid #4a5568;
+}
+
+.fontsDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.fonts {
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  border-color: transparent;
+  box-sizing: border-box;
+  border: 0 solid #e2e8f0;
+  margin-bottom: 1rem;
+}
+
+.imageDiv {
+  cursor: pointer;
+  box-shadow: rgba(11, 17, 24, 0.3) 0px 0px 0px 1px;
+}
+.imageDiv:hover,
+.imageActive {
+  cursor: pointer;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.box {
+  width: 100%;
+  background-color: #edf2f7;
+  padding: 0.75rem 1rem;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  border: none;
+  margin-bottom: 0.5rem ;
+}
+
+@media print {
+  .dashboardDiv {
+    border: none;
+    overflow: inherit;
+    margin: 0;
+    transform: none;
+  }
+}
