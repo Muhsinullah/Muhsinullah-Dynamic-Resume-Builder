@@ -176,6 +176,14 @@
           "desciption": ""
         },
         {
+            "build": {
+              "env": {
+                "NPM_FLAGS": "--legacy-peer-deps"
+              }
+            }
+          },
+          
+        {
           "id": "project-003",
           "title": "Resume Builder",
           "demoUrl": "",
